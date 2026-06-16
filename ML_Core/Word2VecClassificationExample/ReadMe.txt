@@ -1,0 +1,7 @@
+This code is to demonstrate the use of Word2Vec model in downstream ML task such as classification.
+
+A text corpus is used to generate embeddings which are then used to predict the sentiment of reviews in NLTK movie review dataset. 
+
+Word2Vec can be used as a feature extraction technique for the classification of movie reviews. In this approach, Word2Vec first learns dense vector representations of words from a text corpus, capturing semantic and contextual relationships between words. Each movie review is then converted into a numerical representation by averaging or combining the vectors of the words it contains. These review-level embeddings serve as input features for a classification model such as Logistic Regression, Support Vector Machine (SVM), Random Forest, or a Neural Network. In this example, Logistic Regression is used. The downstream task is typically sentiment classification, where the model predicts whether a movie review expresses a positive or negative opinion. By representing words with meaningful embeddings, Word2Vec helps the classifier better understand the semantic content of reviews, often achieving higher accuracy than traditional bag-of-words approaches while reducing feature dimensionality. 
+
+This combination of Word2Vec embeddings and supervised classification models provides an effective and computationally efficient solution for movie review sentiment analysis.
